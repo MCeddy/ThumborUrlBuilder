@@ -10,14 +10,19 @@ Thumbor client for Node JS
 npm install thumbor-url-builder --save
 ```
 
-```javascript
+```typescript
 // Declare thumbor-url-builder in JS
 // Your encryption key is not required, but your link will be unsafe.
 
-var ThumborUrlBuilder = require('thumbor-url-builder');
-var thumborURL = new ThumborUrlBuilder('MY_KEY', 'http://myserver.thumbor.com');
+import { ThumborUrlBuilder } from 'thumbor-url-builder-ts';
+
+const thumbor = new ThumborUrlBuilder('MY_KEY', 'http://myserver.thumbor.com');
 
 // Generate your url :
 
-var thumborUrl = thumborURL.setImagePath('00223lsvrnzeaf42.png').resize(50, 50).smartCrop(true).buildUrl();
+const thumborUrl = thumbor
+    .setImagePath('00223lsvrnzeaf42.png')
+    .resize(50, 50)
+    .smartCrop(true)
+    .buildUrl();
 ```

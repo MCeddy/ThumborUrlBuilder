@@ -1,16 +1,16 @@
 {
-  "name": "thumbor-url-builder",
-  "version": "0.1.1",
-  "dependencies": {
-    "crypto-js": "^3.1.5"
-  },
-  "author": {
-    "name": "David Caramelo",
-    "url": "fr.viadeo.com/fr/profile/david.caramelo1"
-  },
-  "readme": "Client Thumbor for Node JS",
-  "readmeFilename": "README.md",
-  "devDependencies": {
-    "@types/crypto-js": "^3.1.43"
-  }
+    "name": "thumbor-url-builder-ts",
+    "version": "0.1.2",
+    "dependencies": {
+        "crypto-js": "^3.1.5"
+    },
+    "author": {
+        "name": "David Caramelo & René Schimmelpfennig",
+        "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"
+    },
+    "readme": "TypeScript Client Thumbor for Node JS",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "@types/crypto-js": "^3.1.43"
+    }
 }

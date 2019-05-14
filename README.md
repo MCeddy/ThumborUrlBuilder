@@ -1,6 +1,6 @@
 # ThumborUrlBuilder TS
 
-TypeSript client for building Thumbor URLs.
+TypeScript client for building Thumbor URLs.
 
 ## Usage
 

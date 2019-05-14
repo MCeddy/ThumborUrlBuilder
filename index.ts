@@ -1,1 +1,1 @@
-export * from './thumbor-url-builder';
+export * from './src/thumbor-url-builder';

@@ -1,25 +1,22 @@
-# ThumborUrlBuilder
+# ThumborUrlBuilder TS
 
-Thumbor client for Node JS
+TypeSript client for building Thumbor URLs.
 
 ## Usage
 
 ```sh
-# Install thumbor-url-builder module
+# Install thumbor-url-builder-ts module
 
-npm install thumbor-url-builder --save
+npm install thumbor-url-builder-ts --save
 ```
 
 ```typescript
-// Declare thumbor-url-builder in JS
-// Your encryption key is not required, but your link will be unsafe.
-
 import { ThumborUrlBuilder } from 'thumbor-url-builder-ts';
 
+// Your encryption key is not required, but your link will be unsafe.
 const thumbor = new ThumborUrlBuilder('MY_KEY', 'http://myserver.thumbor.com');
 
-// Generate your url :
-
+// Generate your url
 const thumborUrl = thumbor
     .setImagePath('00223lsvrnzeaf42.png')
     .resize(50, 50)

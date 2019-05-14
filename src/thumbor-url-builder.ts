@@ -2,6 +2,8 @@ import * as crypto from 'crypto-js';
 
 import { HAlgin, VAlgin, CropModel, Format } from './models';
 
+export * from './models';
+
 export class ThumborUrlBuilder {
     private imagePath = '';
     private width = 0;

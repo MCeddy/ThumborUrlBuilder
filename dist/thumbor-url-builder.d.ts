@@ -1,5 +1,4 @@
 import { HAlgin, VAlgin, Format } from './models';
-export * from './models';
 export declare class ThumborUrlBuilder {
     private securityKey;
     private serverUrl;
@@ -89,7 +88,7 @@ export declare class ThumborUrlBuilder {
      * Converts operation array to string
      * @return {string}
      */
-    private getOperationPath();
+    private getOperationPath;
     /**
      * Build operation array
      *

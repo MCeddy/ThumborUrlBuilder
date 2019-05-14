@@ -8,20 +8,18 @@
         "name": "David Caramelo",
         "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"
     },
-    "contributors": [
-        {
-            "name": "René Schimmelpfennig",
-            "email": "mail@reneschimmelpfennig.de",
-            "url": "https://www.reneschimmelpfennig.de"
-        }
-    ],
+    "contributors": [{
+        "name": "René Schimmelpfennig",
+        "email": "mail@reneschimmelpfennig.de",
+        "url": "https://www.reneschimmelpfennig.de"
+    }],
     "description": "Thumbor TypeScript Client",
+    "keywords": ["thumbor", "typescript"],
     "homepage": "https://github.com/MCeddy/ThumborUrlBuilderTs",
     "repository": {
         "type": "git",
         "url": "https://github.com/MCeddy/ThumborUrlBuilderTs.git"
     },
-    "readmeFilename": "README.md",
     "devDependencies": {
         "@types/crypto-js": "^3.1.43"
     }

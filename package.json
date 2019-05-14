@@ -4,8 +4,8 @@
     "scripts": {
         "build": "tsc"
     },
-    "main": "dist/thumbor-url-builder.js",
-    "typings": "dist/thumbor-url-builder.d.ts",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
     "author": {
         "name": "David Caramelo",
         "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"

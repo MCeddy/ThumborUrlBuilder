@@ -1,23 +1,20 @@
 {
     "name": "thumbor-url-builder-ts",
     "version": "0.1.4",
-    "dependencies": {
-        "crypto-js": "^3.1.5"
-    },
     "scripts": {
         "prepublish": "tsc"
     },
+    "main": "dist/thumbor-url-builder.js",
+    "typings": "dist/thumbor-url-builder.d.ts",
     "author": {
         "name": "David Caramelo",
         "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"
     },
-    "contributors": [
-        {
-            "name": "René Schimmelpfennig",
-            "email": "mail@reneschimmelpfennig.de",
-            "url": "https://www.reneschimmelpfennig.de"
-        }
-    ],
+    "contributors": [{
+        "name": "René Schimmelpfennig",
+        "email": "mail@reneschimmelpfennig.de",
+        "url": "https://www.reneschimmelpfennig.de"
+    }],
     "description": "Thumbor TypeScript Client",
     "keywords": [
         "thumbor",
@@ -27,6 +24,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/MCeddy/ThumborUrlBuilderTs.git"
+    },
+    "dependencies": {
+        "crypto-js": "^3.1.5"
     },
     "devDependencies": {
         "@types/crypto-js": "^3.1.43",

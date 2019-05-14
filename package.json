@@ -2,7 +2,7 @@
     "name": "thumbor-url-builder-ts",
     "version": "0.1.4",
     "scripts": {
-        "prepublish": "tsc"
+        "build": "tsc"
     },
     "main": "dist/thumbor-url-builder.js",
     "typings": "dist/thumbor-url-builder.d.ts",

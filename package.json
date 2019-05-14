@@ -4,6 +4,9 @@
     "dependencies": {
         "crypto-js": "^3.1.5"
     },
+    "scripts": {
+        "prepublish": "tsc"
+    },
     "author": {
         "name": "David Caramelo",
         "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"
@@ -26,6 +29,7 @@
         "url": "https://github.com/MCeddy/ThumborUrlBuilderTs.git"
     },
     "devDependencies": {
-        "@types/crypto-js": "^3.1.43"
+        "@types/crypto-js": "^3.1.43",
+        "typescript": "^3.4.5"
     }
 }

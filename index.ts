@@ -114,7 +114,7 @@ export class ThumborUrlBuilder {
      * Append a filter, e.g. quality(80)
      * @param  {String} filterCall
      */
-    filter(filterCall): ThumborUrlBuilder {
+    filter(filterCall: string): ThumborUrlBuilder {
         this.filtersCalls.push(filterCall);
         return this;
     }

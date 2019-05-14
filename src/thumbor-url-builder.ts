@@ -1,6 +1,6 @@
 import * as crypto from 'crypto-js';
 
-import { HAlgin, VAlgin, CropModel } from './models';
+import { HAlgin, VAlgin, CropModel, Format } from './models';
 
 export class ThumborUrlBuilder {
     private imagePath = '';
@@ -10,9 +10,9 @@ export class ThumborUrlBuilder {
     private fitInFlag = false;
     private flipHorizontally = false;
     private flipVertically = false;
-    private hAlignValue: HAlgin = null;
-    private vAlignValue: VAlgin = null;
-    private cropValues: CropModel = null;
+    private hAlignValue: HAlgin | null = null;
+    private vAlignValue: VAlgin | null = null;
+    private cropValues: CropModel | null = null;
     private meta = false;
     private filtersCalls: string[] = [];
 
@@ -116,6 +116,11 @@ export class ThumborUrlBuilder {
      */
     filter(filterCall: string): ThumborUrlBuilder {
         this.filtersCalls.push(filterCall);
+        return this;
+    }
+
+    format(format: Format): ThumborUrlBuilder {
+        this.filter(`format(${format})`);
         return this;
     }
 

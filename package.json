@@ -1,8 +1,9 @@
 {
     "name": "thumbor-url-builder-ts",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "prepublish": "tsc"
     },
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -10,11 +11,13 @@
         "name": "David Caramelo",
         "url": "https://fr.viadeo.com/fr/profile/david.caramelo1"
     },
-    "contributors": [{
-        "name": "René Schimmelpfennig",
-        "email": "mail@reneschimmelpfennig.de",
-        "url": "https://www.reneschimmelpfennig.de"
-    }],
+    "contributors": [
+        {
+            "name": "René Schimmelpfennig",
+            "email": "mail@reneschimmelpfennig.de",
+            "url": "https://www.reneschimmelpfennig.de"
+        }
+    ],
     "description": "Thumbor TypeScript Client",
     "keywords": [
         "thumbor",

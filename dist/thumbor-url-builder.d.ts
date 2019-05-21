@@ -1,4 +1,4 @@
-import { HAlgin, VAlgin, Format } from './models';
+import { HAlign, VAlign, Format } from './models';
 export declare class ThumborUrlBuilder {
     private securityKey;
     private serverUrl;
@@ -52,14 +52,14 @@ export declare class ThumborUrlBuilder {
     withFlipVertically(): ThumborUrlBuilder;
     /**
      * Specify horizontal alignment used if width is altered due to cropping
-     * @param  {HAlgin} vAlign 'left', 'center', 'right'
+     * @param  {HAlign} vAlign 'left', 'center', 'right'
      */
-    hAlign(hAlign: HAlgin): ThumborUrlBuilder;
+    hAlign(hAlign: HAlign): ThumborUrlBuilder;
     /**
      * Specify vertical alignment used if height is altered due to cropping
-     * @param  {VAlgin} vAlign 'top', 'middle', 'bottom'
+     * @param  {VAlign} vAlign 'top', 'middle', 'bottom'
      */
-    vAlign(vAlign: VAlgin): ThumborUrlBuilder;
+    vAlign(vAlign: VAlign): ThumborUrlBuilder;
     /**
      * Specify that JSON metadata should be returned instead of the thumbnailed
      * image.

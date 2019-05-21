@@ -1,4 +1,4 @@
 export * from './crop.model';
 export * from './format.enum';
-export * from './h-algin.enum';
-export * from './v-algin.enum';
+export * from './h-align.enum';
+export * from './v-align.enum';

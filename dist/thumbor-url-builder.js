@@ -86,7 +86,7 @@ var ThumborUrlBuilder = /** @class */ (function () {
     };
     /**
      * Specify horizontal alignment used if width is altered due to cropping
-     * @param  {HAlgin} vAlign 'left', 'center', 'right'
+     * @param  {HAlign} vAlign 'left', 'center', 'right'
      */
     ThumborUrlBuilder.prototype.hAlign = function (hAlign) {
         this.hAlignValue = hAlign;
@@ -94,7 +94,7 @@ var ThumborUrlBuilder = /** @class */ (function () {
     };
     /**
      * Specify vertical alignment used if height is altered due to cropping
-     * @param  {VAlgin} vAlign 'top', 'middle', 'bottom'
+     * @param  {VAlign} vAlign 'top', 'middle', 'bottom'
      */
     ThumborUrlBuilder.prototype.vAlign = function (vAlign) {
         this.vAlignValue = vAlign;

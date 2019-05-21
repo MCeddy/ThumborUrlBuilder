@@ -1,6 +1,6 @@
 import * as crypto from 'crypto-js';
 
-import { HAlgin, VAlgin, CropModel, Format } from './models';
+import { HAlign, VAlign, CropModel, Format } from './models';
 
 export class ThumborUrlBuilder {
     private imagePath = '';
@@ -10,8 +10,8 @@ export class ThumborUrlBuilder {
     private fitInFlag = false;
     private flipHorizontally = false;
     private flipVertically = false;
-    private hAlignValue: HAlgin | null = null;
-    private vAlignValue: VAlgin | null = null;
+    private hAlignValue: HAlign | null = null;
+    private vAlignValue: VAlign | null = null;
     private cropValues: CropModel | null = null;
     private meta = false;
     private filtersCalls: string[] = [];
@@ -85,18 +85,18 @@ export class ThumborUrlBuilder {
 
     /**
      * Specify horizontal alignment used if width is altered due to cropping
-     * @param  {HAlgin} vAlign 'left', 'center', 'right'
+     * @param  {HAlign} vAlign 'left', 'center', 'right'
      */
-    hAlign(hAlign: HAlgin): ThumborUrlBuilder {
+    hAlign(hAlign: HAlign): ThumborUrlBuilder {
         this.hAlignValue = hAlign;
         return this;
     }
 
     /**
      * Specify vertical alignment used if height is altered due to cropping
-     * @param  {VAlgin} vAlign 'top', 'middle', 'bottom'
+     * @param  {VAlign} vAlign 'top', 'middle', 'bottom'
      */
-    vAlign(vAlign: VAlgin): ThumborUrlBuilder {
+    vAlign(vAlign: VAlign): ThumborUrlBuilder {
         this.vAlignValue = vAlign;
         return this;
     }

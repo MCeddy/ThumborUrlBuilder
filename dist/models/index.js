@@ -4,5 +4,5 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./format.enum"));
-__export(require("./h-algin.enum"));
-__export(require("./v-algin.enum"));
+__export(require("./h-align.enum"));
+__export(require("./v-align.enum"));

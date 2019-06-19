@@ -1,6 +1,6 @@
 {
     "name": "thumbor-url-builder-ts",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "scripts": {
         "build": "tsc",
         "prepublish": "tsc"

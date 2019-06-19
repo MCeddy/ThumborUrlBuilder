@@ -84,6 +84,7 @@ export declare class ThumborUrlBuilder {
      * @return {string}
      */
     buildUrl(): string;
+    private getSecureString;
     /**
      * Converts operation array to string
      * @return {string}

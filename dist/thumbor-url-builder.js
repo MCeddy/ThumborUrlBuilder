@@ -144,13 +144,23 @@ var ThumborUrlBuilder = /** @class */ (function () {
      */
     ThumborUrlBuilder.prototype.buildUrl = function () {
         var operation = this.getOperationPath();
-        if (this.securityKey != null) {
-            var key = crypto.HmacSHA1(operation + this.imagePath, this.securityKey);
-            var keyString = crypto.enc.Base64.stringify(key);
-            keyString = keyString.replace(/\+/g, '-').replace(/\//g, '_');
-            return (this.serverUrl + '/' + key + '/' + operation + this.imagePath);
+        var secureString = this.getSecureString(operation);
+        return (this.serverUrl +
+            '/' +
+            secureString +
+            '/' +
+            operation +
+            this.imagePath);
+    };
+    ThumborUrlBuilder.prototype.getSecureString = function (operation) {
+        if (this.securityKey == null) {
+            return 'unsafe';
         }
-        return this.serverUrl + '/unsafe/' + operation + this.imagePath;
+        var key = crypto.HmacSHA1(operation + this.imagePath, this.securityKey);
+        var keyString = crypto.enc.Base64.stringify(key)
+            .replace(/\+/g, '-')
+            .replace(/\//g, '_');
+        return keyString;
     };
     /**
      * Converts operation array to string

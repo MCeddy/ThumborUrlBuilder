@@ -154,23 +154,33 @@ export class ThumborUrlBuilder {
      */
     buildUrl(): string {
         const operation = this.getOperationPath();
+        const secureString = this.getSecureString(operation);
 
-        if (this.securityKey != null) {
-            const key = crypto.HmacSHA1(
-                operation + this.imagePath,
-                this.securityKey
-            );
+        return (
+            this.serverUrl +
+            '/' +
+            secureString +
+            '/' +
+            operation +
+            this.imagePath
+        );
+    }
 
-            let keyString = crypto.enc.Base64.stringify(key);
-
-            keyString = keyString.replace(/\+/g, '-').replace(/\//g, '_');
-
-            return (
-                this.serverUrl + '/' + key + '/' + operation + this.imagePath
-            );
+    private getSecureString(operation: string): string {
+        if (this.securityKey == null) {
+            return 'unsafe';
         }
 
-        return this.serverUrl + '/unsafe/' + operation + this.imagePath;
+        const key = crypto.HmacSHA1(
+            operation + this.imagePath,
+            this.securityKey
+        );
+
+        const keyString = crypto.enc.Base64.stringify(key)
+            .replace(/\+/g, '-')
+            .replace(/\//g, '_');
+
+        return keyString;
     }
 
     /**
